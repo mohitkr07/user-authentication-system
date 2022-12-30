@@ -39,3 +39,9 @@ To deploy this project follow the steps:
 ```
 
 
+
+## Authors
+
+- Mohitkumar A. Mahto
+
+
