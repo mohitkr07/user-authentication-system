@@ -32,9 +32,11 @@ app.post("/", (req, res) => {
     if (err) {
       console.log(err);
     } else {
-      if (result) {
+      if (result.length > 0) {
+        res.send({ message: "logged in" });
         console.log("logged in " + result);
       } else {
+        res.send({ message: "invalid credentials" });
         console.log("invalid user details or user does not exists");
       }
     }

@@ -13,20 +13,22 @@ function Register() {
   };
 
   let onSignup = () => {
-    axios.post("http://localhost:5000/register", {
+    axios
+      .post("http://localhost:5000/register", {
         username,
         password,
       })
       .then((response) => {
         console.log(response);
       });
+    alert("registered");
   };
 
   console.log(username + " " + password);
   return (
     <>
       <div className="content register">
-        <h2>Register</h2>
+        <h2>Welcome</h2>
         <input
           className="inp field"
           type="text"

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&family=Poppins:wght@100;200&family=Roboto:wght@100;300&display=swap');
+/* font-family: 'Noto Sans',sans-serif;
+font-family: 'Poppins',sans-serif;
+font-family: 'Roboto',sans-serif; */
+*{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #B1B2FF;
+}
+.content{
+    height: 20rem;
+    width: 30rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 0.3rem;
+    /* border: 0.1px solid grey; */
+}
+
+.forgotpass{
+    /* display: flex;
+    flex-direction: row;
+    width: 14rem;
+    justify-content: space-between; */
+    position: absolute;
+    left: 50%;
+    top: 76%;
+    transform: translate(-50%,0);
+}
+
+.inp{
+    margin-top: 1.6rem;
+}
+
+.field{
+    height: 2.5rem;
+    width: 23rem;
+    border: none;
+    border-bottom: 0.1px solid #D2DAFF;
+    outline: none;
+    text-align: left;
+    background-color: #EEF1FF;
+    border-radius: 0.2rem;
+}
+.field:focus{
+    border-color: #B1B2FF;
+    transition: 0.2s ease-out;
+}
+
+.btn{
+    width: 23rem;
+    height: 2.5rem;
+    border: none;
+    cursor: pointer;
+    background-color: #bebffb;
+    color: #EEF1FF;
+    border-radius: 0.2rem;
+    
+}
+
+.btn:hover{
+    background-color: #B1B2FF;
+    color: white;
+    transition: ease 0.2s;
+}

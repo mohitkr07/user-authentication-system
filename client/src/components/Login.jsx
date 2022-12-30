@@ -19,6 +19,7 @@ function Login() {
         password,
       })
       .then((response) => {
+        alert(response.data.message);
         console.log(response);
       });
   };
@@ -26,22 +27,29 @@ function Login() {
   return (
     <>
       <div className="content login">
-        <h2>Login</h2>
+        <h2>Welcome Back</h2>
         <input
           className="inp field"
           type="text"
           value={username}
           onChange={checkU}
+          placeholder="username"
         />
         <input
           className="inp field"
           type="password"
           value={password}
           onChange={checkP}
+          placeholder="password"
         />
         <button className="btn inp" onClick={check}>
           Login
         </button>
+      </div>
+      <div className="forgotpass">
+        <p>
+          Forgot password? <a href="#">Reset Password</a>
+        </p>
       </div>
     </>
   );
